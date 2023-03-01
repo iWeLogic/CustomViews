@@ -1,4 +1,4 @@
-package com.iwelogic.custom.views.ui.screens.selector
+package com.iwelogic.custom.views.ui.screens.picker
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -18,7 +18,11 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun PickerScreen() {
 
-    Column(modifier = Modifier.fillMaxSize()) {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Color.White)
+    ) {
 
         val selected = remember {
             mutableStateOf("Red")
@@ -27,7 +31,6 @@ fun PickerScreen() {
         Text(
             modifier = Modifier
                 .align(Alignment.CenterHorizontally)
-                .background(Color.White)
                 .padding(30.dp),
             text = selected.value,
             fontSize = 20.sp,

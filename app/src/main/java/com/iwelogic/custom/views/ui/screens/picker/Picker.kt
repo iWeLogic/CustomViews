@@ -1,4 +1,4 @@
-package com.iwelogic.custom.views.ui.screens.selector
+package com.iwelogic.custom.views.ui.screens.picker
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.gestures.snapping.rememberSnapFlingBehavior

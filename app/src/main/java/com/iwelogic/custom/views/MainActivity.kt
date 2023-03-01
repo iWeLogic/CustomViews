@@ -7,9 +7,10 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.iwelogic.custom.views.ui.MainScreen
+import com.iwelogic.custom.views.ui.chart.ChartScreen
 import com.iwelogic.custom.views.ui.navigation.Routes
 import com.iwelogic.custom.views.ui.screens.progress.ProgressScreen
-import com.iwelogic.custom.views.ui.screens.selector.PickerScreen
+import com.iwelogic.custom.views.ui.screens.picker.PickerScreen
 import com.iwelogic.custom.views.ui.theme.CustomViewsTheme
 
 class MainActivity : ComponentActivity() {
@@ -27,6 +28,9 @@ class MainActivity : ComponentActivity() {
                     }
                     composable(Routes.PICKER.route) {
                         PickerScreen()
+                    }
+                    composable(Routes.CHART.route) {
+                        ChartScreen()
                     }
                 }
             }

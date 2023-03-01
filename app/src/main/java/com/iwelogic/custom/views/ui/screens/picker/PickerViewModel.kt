@@ -1,4 +1,4 @@
-package com.iwelogic.custom.views.ui.screens.selector
+package com.iwelogic.custom.views.ui.screens.picker
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
